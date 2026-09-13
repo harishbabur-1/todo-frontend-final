@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="todo-page">
+    <nav class="navbar dashboard-nav">
+        <h2>Todo App</h2>
+        <div class="user-area">
+            <span id="userEmail"></span>
+            <button id="logoutButton" class="logout-button">Logout</button>
+        </div>
+    </nav>
+
+    <main class="todo-container">
+        <div class="todo-header">
+            <div>
+                <p class="small-title">MY TASKS</p>
+                <h1>Todo List</h1>
+            </div>
+        </div>
+
+        <form id="todoForm" class="add-form">
+            <input type="text" id="todoTitle" placeholder="What do you need to do?" required>
+            <input type="text" id="todoDescription" placeholder="Description">
+            <button type="submit" class="button">Add Todo</button>
+        </form>
+
+        <p id="todoMessage" class="message"></p>
+        <div id="todoList" class="todo-list"></div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
